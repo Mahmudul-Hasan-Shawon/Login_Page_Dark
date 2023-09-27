@@ -2,7 +2,6 @@
 
 body{
 font-family: 'Poppins', sans-serif;
-background: #ffffff;
 }
 
 /*------------ Login container ------------*/
@@ -56,8 +55,8 @@ width: 120px;
 height: auto;
 border: none;
 font-weight: 600;
-
 line-height: 19px;
+
 }
 
 /*------------ Button: Hover ------------*/
@@ -70,6 +69,19 @@ border: none;
 -ms-transition: .3s ease-in-out;
 -o-transition: .3s ease-in-out;
 }
+
+.download_card{
+    border: 1px solid rgb(184, 154, 255);
+
+}
+
+
+
+
+
+
+
+
 
 /*------------ Form ------------*/
 .form-control,.form-select{
@@ -217,6 +229,4 @@ box-shadow: 0 8px 17px 0 rgba(33, 255, 81, 0.2), 0 6px 20px 0 rgba(10, 248, 129,
 
 
 
-.btn{
-    height: 45px;
-}
+
