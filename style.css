@@ -214,3 +214,9 @@ background-color: #06c264;
 transition: .3s;
 box-shadow: 0 8px 17px 0 rgba(33, 255, 81, 0.2), 0 6px 20px 0 rgba(10, 248, 129, 0.19);
 }
+
+
+
+.btn{
+    height: 45px;
+}
