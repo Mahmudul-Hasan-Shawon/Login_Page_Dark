@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="bg">
 
 <head>
 
@@ -19,7 +19,7 @@
 
 </head>
 
-<body class="bg-white">
+<body class="bg">
     <script id="navbar" src="nav.js"></script>
 
     <div class="container">
@@ -29,7 +29,7 @@
 
             <div class="col-xl-10 col-lg-12 col-md-9 d-flex justify-content-center align-items-center min-vh-100">
 
-                <div class="card o-hidden border-0 shadow-lg my-5">
+                <div class="card o-hidden border-0 shadow my-5">
                     <div class="card-body p-0">
                         <!-- Nested Row within Card Body -->
                         <div class="row">
@@ -43,14 +43,15 @@
                                         <h2>Sign in</h2>
                                     </div>
                                     <div class="input-group mb-3">
-                                        <input id="email" type="text" class="form-control form-control-lg bg-light fs-6"
+                                        <input id="email" type="text"
+                                            class="form-control form-control-lg login_input fs-6"
                                             placeholder="Email address">
                                     </div>
                                     <div class="input-group mb-1">
-                                        <input type="password" class="form-control form-control-lg bg-light fs-6"
+                                        <input type="password" class="form-control form-control-lg login_input fs-6"
                                             placeholder="Password">
                                     </div>
-                                    <div class="input-group mb-5 d-flex justify-content-between">
+                                    <div class="input-group mt-2 mb-5 d-flex justify-content-between">
                                         <div class="form-check">
                                             <input type="checkbox" class="form-check-input" id="formCheck">
                                             <label for="formCheck" class="form-check-label text-secondary">
@@ -85,6 +86,11 @@
 </body>
 
 <style>
+
+    .bg {
+        background-color: #1e1e24;
+    }
+
     .bg-login-image {
         background-position: center;
         background-size: cover;
@@ -98,6 +104,11 @@
 
     .login_btn {
         height: 45px;
+    }
+
+    /* Style the placeholder text color to white */
+    .login_input::placeholder {
+        color: #6c757d;
     }
 </style>
 

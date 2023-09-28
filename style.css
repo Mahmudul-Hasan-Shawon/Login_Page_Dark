@@ -4,6 +4,13 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+.bg{
+    background-color: #1e1e24;
+}
+
+
+
+
 /*------------ Login container ------------*/
 
 .box-area {
@@ -14,12 +21,15 @@ body {
 
 .right-box {
     padding: 40px 30px 40px 40px;
+    background-color: #22232a;
+    color: #ffffff;
 }
 
 /*------------ Custom Placeholder ------------*/
 
 ::placeholder {
     font-size: 16px;
+    color: #06c264;
 }
 
 .rounded-4 {
@@ -64,7 +74,8 @@ body {
 
 /*------------ Button: Hover ------------*/
 .btn:hover {
-    background-color: #071952;
+    background-color: #2dc995;
+    color: #ffffff;
     transition: .3s ease-in-out;
     border: none;
  
@@ -95,8 +106,18 @@ body {
 }
 
 
-
-
+a{
+    color: rgb(68, 194, 253);
+    transition: 0.3s ease-in-out;
+}
+a:hover{
+    color: #47fda2;
+    transition: 0.3s ease-in-out;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -ms-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+}
 
 
 
@@ -107,21 +128,33 @@ body {
 /*------------ Form ------------*/
 .form-control,
 .form-select {
+    background-color: #22232a;
     border-width: 2px;
     border-radius: 8px;
-    border-color: #ede5ff;
+    border-color: #40404b;
+    color: white;
 }
 
+
+
 .form-control:focus {
+    background-color: #22232a;
+    color: #ffffff;
     box-shadow: none;
     border-color: #6e34f4;
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 24px #e2d6ff;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 24px #000000;
 
 }
 
 .shadow {
-    box-shadow: 0 .5rem 1rem #d6c4ff !important;
+    box-shadow: 0 .5rem 5rem #000000 !important;
 }
+
+
+
+
+
+
 
 /*------------ card Design for download page ------------*/
 @import url('https://fonts.googleapis.com/css2?family=Figtree:wght@300&display=swap');
@@ -184,15 +217,15 @@ h1.heading {
     line-height: 1.42857143;
     background-color: #fff;
     border-radius: 5px;
-    /*box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-*/
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+
     transition: box-shadow 0.25s;
 
 }
 
 .card:hover {
-    /* box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
-    box-shadow: 0 8px 17px 0 rgba(171, 106, 255, 0.2), 0 6px 20px 0 rgba(176, 107, 255, 0.19);
+    
+    box-shadow: 0 8px 17px 0 #0000009f, 0 6px 20px 0 #071952;
 }
 
 .img-card {

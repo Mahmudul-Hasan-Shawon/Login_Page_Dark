@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en"">
+<html lang="en" class="bg">
 
 <head>
 
@@ -19,9 +19,7 @@
 
 </head>
 
-
-<body class="bg-white">
-    
+<body class="bg">
     <script id="navbar" src="nav.js"></script>
 
     <div class="container">
@@ -31,7 +29,7 @@
 
             <div class="col-xl-10 col-lg-12 col-md-9 d-flex justify-content-center align-items-center min-vh-100">
 
-                <div class="card o-hidden border-0 shadow-lg my-5">
+                <div class="card o-hidden border-0 shadow my-5">
                     <div class="card-body p-0">
                         <!-- Nested Row within Card Body -->
                         <div class="row">
@@ -45,29 +43,31 @@
                                         <h2>Sign up</h2>
                                     </div>
                                     <div class="input-group mb-3">
-                                        <input type="text" class="form-control form-control-lg bg-light fs-6" placeholder="Username">
+                                        <input id="email" type="text"
+                                            class="form-control form-control-lg login_input fs-6"
+                                            placeholder="Username">
                                     </div>
-                
                                     <div class="input-group mb-3">
-                                        <input type="text" class="form-control form-control-lg bg-light fs-6"
+                                        <input id="email" type="text"
+                                            class="form-control form-control-lg login_input fs-6"
                                             placeholder="Email address">
                                     </div>
-                                    <div class="input-group mb-1">
-                                        <input type="password" class="form-control form-control-lg bg-light fs-6"
+                                    <div class="input-group mb-3">
+                                        <input type="password" class="form-control form-control-lg login_input fs-6"
                                             placeholder="Password">
                                     </div>
-                                    <div class="input-group mb-1 mt-2">
-                                        <input type="password" class="form-control form-control-lg bg-light fs-6"
+                                    <div class="input-group mb-1">
+                                        <input type="password" class="form-control form-control-lg login_input fs-6"
                                             placeholder="Confirm Password">
                                     </div>
-                
-                                    <div class="input-group mb-3 mt-5 accordion">
-                                        <button class="reg_btn btn btn-lg btn-primary w-100 fs-6">Register</button>
+       
+                                    <div class="input-group mb-3 mt-5">
+                                        <button class="login_btn btn btn-lg btn-primary w-100 fs-6">Register</button>
                                     </div>
-                
-                                    <div class="row">
-                                        <small>Already have an account? <a href="login.html" style="text-decoration: none;font-weight:bold">Login
-                                                here</a></small>
+                                    <div class="row mt-2">
+                                        <small>Already have an account? <a href="login.html"
+                                                style="text-decoration: none;   font-weight: bold;">Sign
+                                                in</a></small>
                                     </div>
                                 </div>
                             </div>
@@ -84,23 +84,30 @@
 </body>
 
 <style>
+
+    .bg {
+        background-color: #1e1e24;
+    }
+
     .bg-login-image {
         background-position: center;
         background-size: cover;
         border-radius: 5px 0px 0px 5px;
-        
+
     }
+
     .right-box {
-        padding: 90px 80px  90px 80px;
+        padding: 90px 80px 90px 80px;
     }
 
-    .reg_btn{
+    .login_btn {
         height: 45px;
-        
     }
 
-
-
+    /* Style the placeholder text color to white */
+    .login_input::placeholder {
+        color: #6c757d;
+    }
 </style>
 
 </html>
