@@ -215,10 +215,12 @@ h1.heading {
 }
 
 .card {
+    border: 2px solid #2f303a;
+    color: white;
     display: block;
     margin-bottom: 20px;
     line-height: 1.42857143;
-    background-color: #fff;
+    background-color: #2f303a;
     border-radius: 5px;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
 
