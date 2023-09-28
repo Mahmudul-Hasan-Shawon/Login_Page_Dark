@@ -80,7 +80,7 @@ border-color: #ede5ff;
 .form-control:focus{
 box-shadow:none;
 border-color: #6e34f4;
-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px #bda1ff;
+box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset,  0 0 24px #e2d6ff;
 
 }
 
