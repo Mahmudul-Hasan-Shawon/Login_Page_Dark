@@ -126,6 +126,8 @@ a:hover{
 
 
 /*------------ Form ------------*/
+
+
 .form-control,
 .form-select {
     background-color: #22232a;
@@ -133,6 +135,7 @@ a:hover{
     border-radius: 8px;
     border-color: #40404b;
     color: white;
+   
 }
 
 
