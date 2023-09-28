@@ -1,91 +1,130 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
 
-body{
-font-family: 'Poppins', sans-serif;
+body {
+    font-family: 'Poppins', sans-serif;
 }
 
 /*------------ Login container ------------*/
 
-.box-area{
-width: 830px;
+.box-area {
+    width: 830px;
 }
 
 /*------------ Right box ------------*/
 
-.right-box{
-padding: 40px 30px 40px 40px;
+.right-box {
+    padding: 40px 30px 40px 40px;
 }
 
 /*------------ Custom Placeholder ------------*/
 
-::placeholder{
-font-size: 16px;
+::placeholder {
+    font-size: 16px;
 }
 
-.rounded-4{
-border-radius: 20px;
+.rounded-4 {
+    border-radius: 20px;
 }
-.rounded-5{
-border-radius: 30px;
+
+.rounded-5 {
+    border-radius: 30px;
 }
 
 /*------------ For small screens------------*/
 
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 768px) {
 
-.box-area{
-margin: 0 10px;
+    .box-area {
+        margin: 0 10px;
 
-}
-.left-box{
-height: 100px;
-overflow: hidden;
-}
-.right-box{
-padding: 20px;
-}
+    }
+
+    .left-box {
+        height: 100px;
+        overflow: hidden;
+    }
+
+    .right-box {
+        padding: 20px;
+    }
 
 }
 
 /*------------ Button------------*/
-.btn{
-background-color: #6e34f4;
-transition: .3s ease-in-out;
-width: 120px;
-height: auto;
-border: none;
-font-weight: 600;
-line-height: 19px;
+.btn {
+    background-color: #6e34f4;
+    transition: .3s ease-in-out;
+    width: 120px;
+    height: auto;
+    border: none;
+    font-weight: 600;
+    line-height: 19px;
 
 }
 
 /*------------ Button: Hover ------------*/
-.btn:hover{
-background-color: #071952;
-transition: .3s ease-in-out;
-border: none;
--webkit-transition: .3s ease-in-out;
--moz-transition: .3s ease-in-out;
--ms-transition: .3s ease-in-out;
--o-transition: .3s ease-in-out;
+.btn:hover {
+    background-color: #071952;
+    transition: .3s ease-in-out;
+    border: none;
+ 
 }
+
+/*------------ Purchase Button ------------*/
+.purchase_button {
+    border-radius: 5px;
+    background-color: #6e34f4;
+    transition: .5s;
+    font-size: 16px;
+    height: 40px;
+    border: none;
+    font-weight: 600;
+    /*-webkit-transition: 1.3s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+    */:;
+    -webkit-transition: .5s;
+}
+
+.purchase_button:hover {
+    background-color: #06c264;
+    transition: .5s;
+    /*box-shadow: 0 8px 17px 0 rgba(33, 255, 81, 0.2), 0 6px 20px 0 rgba(10, 248, 129, 0.19);
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+    */:;
+}
+
+
+
+
+
+
+
+
+
+
 
 /*------------ Form ------------*/
-.form-control,.form-select{
-border-width: 2px;
-border-radius: 8px;
-border-color: #ede5ff;
+.form-control,
+.form-select {
+    border-width: 2px;
+    border-radius: 8px;
+    border-color: #ede5ff;
 }
 
-.form-control:focus{
-box-shadow:none;
-border-color: #6e34f4;
-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset,  0 0 24px #e2d6ff;
+.form-control:focus {
+    box-shadow: none;
+    border-color: #6e34f4;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 24px #e2d6ff;
 
 }
 
 .shadow {
-box-shadow: 0 .5rem 1rem #d6c4ff!important;
+    box-shadow: 0 .5rem 1rem #d6c4ff !important;
 }
 
 /*------------ card Design for download page ------------*/
@@ -93,124 +132,103 @@ box-shadow: 0 .5rem 1rem #d6c4ff!important;
 
 html,
 body {
--moz-box-sizing: border-box;
-box-sizing: border-box;
-height: 100%;
-width: 100%;
-background: #fff;
-font-family: 'Figtree', sans-serif;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    background: #fff;
+    font-family: 'Figtree', sans-serif;
 
 }
 
 .wrapper {
-display: table;
-height: 100%;
-width: 100%;
+    display: table;
+    height: 100%;
+    width: 100%;
 }
 
 .container-product {
-display: table-cell;
-/* padding: 1em; */
-text-align: center;
-vertical-align: middle;
+    display: table-cell;
+    /* padding: 1em; */
+    text-align: center;
+    vertical-align: middle;
 }
 
 h1.heading {
-color: #fff;
-font-family: 'Figtree', sans-serif;
-font-size: 1.15em;
-font-weight: 900;
-margin: 0 0 0.5em;
-color: #505050;
+    color: #fff;
+    font-family: 'Figtree', sans-serif;
+    font-size: 1.15em;
+    font-weight: 900;
+    margin: 0 0 0.5em;
+    color: #505050;
 }
 
 @media (min-width: 450px) {
-h1.heading {
-font-size: 3.55em;
-}
+    h1.heading {
+        font-size: 3.55em;
+    }
 }
 
 @media (min-width: 760px) {
-h1.heading {
-font-size: 3.05em;
-}
+    h1.heading {
+        font-size: 3.05em;
+    }
 }
 
 @media (min-width: 900px) {
-h1.heading {
-font-size: 3.25em;
-margin: 0 0 0.3em;
-}
+    h1.heading {
+        font-size: 3.25em;
+        margin: 0 0 0.3em;
+    }
 }
 
 .card {
-display: block;
-margin-bottom: 20px;
-line-height: 1.42857143;
-background-color: #fff;
-border-radius: 5px;
-/*box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-*/transition: box-shadow 0.25s;
--webkit-border-radius: 5px;
--moz-border-radius: 5px;
--ms-border-radius: 5px;
--o-border-radius: 5px;
+    display: block;
+    margin-bottom: 20px;
+    line-height: 1.42857143;
+    background-color: #fff;
+    border-radius: 5px;
+    /*box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+*/
+    transition: box-shadow 0.25s;
+
 }
 
 .card:hover {
-/* box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
-box-shadow: 0 8px 17px 0 rgba(171, 106, 255, 0.2), 0 6px 20px 0 rgba(176, 107, 255, 0.19);
+    /* box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+    box-shadow: 0 8px 17px 0 rgba(171, 106, 255, 0.2), 0 6px 20px 0 rgba(176, 107, 255, 0.19);
 }
 
 .img-card {
-width: 100%;
-height: 200px;
-border-top-left-radius: 2px;
-border-top-right-radius: 2px;
-display: block;
-overflow: hidden;
+    width: 100%;
+    height: 200px;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    display: block;
+    overflow: hidden;
 }
 
 .img-card img {
-width: 100%;
-height: 200px;
-object-fit: cover;
-transition: all 0.25s ease;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: all 0.25s ease;
 }
 
 .card-content {
-padding: 15px;
-text-align: left;
+    padding: 15px;
+    text-align: left;
 }
 
 .card-title {
-/* font-family: 'Poppins', sans-serif; */
-margin-top: 0px;
-font-weight: 600;
-font-size: 16px;
+    /* font-family: 'Poppins', sans-serif; */
+    margin-top: 0px;
+    font-weight: 600;
+    font-size: 16px;
 }
 
 .card-title a {
-color: #000;
-text-decoration: none !important;
+    color: #000;
+    text-decoration: none !important;
 }
 
-/*------------ Purchase Button ------------*/
-.purchase_button{
-border-radius: 5px;
-background-color: #6e34f4;
-transition: .3s;
-font-size: 16px;
-height: 40px;
--webkit-border-radius: 5px;
--moz-border-radius: 5px;
--ms-border-radius: 5px;
--o-border-radius: 5px;
-
-}
-
-.purchase_button:hover{
-background-color: #06c264;
-transition: .3s;
-box-shadow: 0 8px 17px 0 rgba(33, 255, 81, 0.2), 0 6px 20px 0 rgba(10, 248, 129, 0.19);
-}
