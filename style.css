@@ -74,28 +74,24 @@ body {
 .purchase_button {
     border-radius: 5px;
     background-color: #6e34f4;
-    transition: .5s;
-    font-size: 16px;
-    height: 40px;
+    transition: .3s;
+    font-size: 15px;
+    height: auto;
     border: none;
     font-weight: 600;
-    /*-webkit-transition: 1.3s;
-    -moz-transition: .5s;
-    -ms-transition: .5s;
-    -o-transition: .5s;
-    */:;
-    -webkit-transition: .5s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
 }
 
 .purchase_button:hover {
     background-color: #06c264;
-    transition: .5s;
-    /*box-shadow: 0 8px 17px 0 rgba(33, 255, 81, 0.2), 0 6px 20px 0 rgba(10, 248, 129, 0.19);
-    -webkit-transition: .5s;
-    -moz-transition: .5s;
-    -ms-transition: .5s;
-    -o-transition: .5s;
-    */:;
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
 }
 
 
