@@ -41,12 +41,13 @@
                                     <p>Total License<small class="text-muted"></small></p>
                                 </div>
                                 <div class="flex-shrink-0">
-                                    <span class="material-symbols-outlined" style="font-size: 40px; color:#6eeca2;">
-                                        <i class="bi bi-bag-heart"></i>
+                                    <span class="icon_total_license material-symbols-outlined"
+                                        style="color:#beff93;">
+                                        <i class="fa-solid fa-cart-shopping"></i>
                                     </span>
-                                    </div>
+                                </div>
                             </div>
-    
+
                         </div>
                     </div>
 
@@ -62,9 +63,8 @@
                                 <p>Recent Sales</p>
                             </div>
                             <div class="flex-shrink-0">
-                                <span class="material-symbols-outlined"
-                                    style="font-size: 40px; color:#fffb00;">
-                                    confirmation_number
+                                <span class="icon_recent_sales material-symbols-outlined" style="font-size: 40px; color:#F4E869;">
+                                    <i class="fa-solid fa-money-bill-trend-up"></i>
                                 </span>
                                 <!-- <img width="48" height="48" src="https://img.icons8.com/3d-fluency/94/new.png"
                                     alt="new" /> -->
@@ -83,8 +83,8 @@
                                 <p>Expiration Alerts</p>
                             </div>
                             <div class="flex-shrink-0">
-                                <span class="material-symbols-outlined" style="font-size: 40px; color:#ff3232;">
-                                    running_with_errors
+                                <span class="icon_expiration_alert material-symbols-outlined">
+                                    <i class="fa-regular fa-clock"></i>
                                 </span>
                             </div>
                         </div>
@@ -101,12 +101,9 @@
                                 <p>License Activation </p>
                             </div>
                             <div class="flex-shrink-0">
-                                <span class="material-symbols-outlined"
-                                    style="font-size: 40px; color:#00ff62;">
+                                <span class="icon_license_activation material-symbols-outlined icon">
                                     key
                                 </span>
-                                <!-- <img width="48" height="48" src="https://img.icons8.com/3d-fluency/94/password1.png"
-                                    alt="password1" /> -->
                             </div>
                         </div>
 
@@ -126,11 +123,10 @@
                                 <p>Revenue Overview</p>
                             </div>
                             <div class="flex-shrink-0">
-                                <span class="material-symbols-outlined"
-                            style="font-size: 40px; color:rgb(223, 167, 255);">
-                            <i class="bi bi-cash-coin"></i>
-                        </span>
-                           
+                                <span class="material-symbols-outlined reveneue_overview">
+                                    <i class="bi bi-cash-coin"></i>
+                                </span>
+
                             </div>
                         </div>
 
@@ -146,10 +142,9 @@
                                 <p>Feedback</p>
                             </div>
                             <div class="flex-shrink-0">
-                                <span class="material-symbols-outlined"
-                                style="font-size: 40px; color:rgb(129, 230, 255);">
-                                <i class="fa-regular fa-comment"></i>
-                            </span>
+                                <span class="feedback material-symbols-outlined">
+                                    <i class="fa-regular fa-comment-dots"></i>
+                                </span>
                             </div>
                         </div>
 
@@ -159,25 +154,24 @@
             <!-- column-7 -->
             <div class="col-xl-3 col-sm-6 col-12">
                 <a href="./support.html">
-                <div class="card">
-                    <div class="card-body">
-                        <div class="d-flex">
-                            <div class="flex-grow-1 align-self-center">
-                                <p>Support</p>
-                            </div>
-                            <div class="flex-shrink-0">
-                                <span class="material-symbols-outlined"
-                            style="font-size: 40px; color:rgb(255, 255, 255);">
-                            <i class="fa-solid fa-headset"></i>
-                        </span>
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="d-flex">
+                                <div class="flex-grow-1 align-self-center">
+                                    <p>Support</p>
+                                </div>
+                                <div class="flex-shrink-0">
+                                    <span class="icon_support material-symbols-outlined"
+                                        style="font-size: 40px;">
+                                        <i class="fa-solid fa-headset"></i>
+                                    </span>
 
-                                
+                                </div>
                             </div>
+
                         </div>
-
                     </div>
-                </div>
-            </a>
+                </a>
             </div>
             <!-- column-8 -->
             <div class="col-xl-3 col-sm-6 col-12">
@@ -188,10 +182,10 @@
                                 <p>License Status</p>
                             </div>
                             <div class="flex-shrink-0">
-                                <span class="material-symbols-outlined"
-                            style="font-size: 40px; color:rgb(255, 177, 245);">
-                            <i class="fa-solid fa-heart-circle-check"></i>
-                        </span>
+                                <span class="icon_status material-symbols-outlined"
+                                    style="font-size: 40px; color:rgb(255, 33, 225);">
+                                    <i class="fa-solid fa-heart-circle-check"></i>
+                                </span>
                                 <!-- <img width="48" height="48" src="https://img.icons8.com/3d-fluency/94/like--v2.png"
                                     alt="like--v2" /> -->
                             </div>
@@ -248,14 +242,107 @@
 
 </body>
 <style>
+    .icon_total_license {
+        font-size: 40px; 
+        transition: 0.3s ease-in-out;
+    }
 
-    a{
+    .icon_total_license:hover {
+        text-shadow: 0 0 50px rgb(0, 255, 64);
+        transition: 0.3s ease-in-out;
+        transform: scale(0.8);
+    }
+
+    .icon_support {
+        transition: 0.3s ease-in-out;
+        color: #beff93;
+    }
+
+    .icon_support:hover {
+        text-shadow: 0 0 50px rgb(71, 255, 111);
+        transition: 0.3s ease-in-out;
+        transform: scale(1.2);
+    }
+    .icon_status {
+        transition: 0.3s ease-in-out;
+    }
+
+    .icon_status:hover {
+        text-shadow: 0 0 50px rgb(247, 0, 255);
+        transition: 0.3s ease-in-out;
+        transform: scale(1.2);
+    }
+    .icon_recent_sales {
+        transition: 0.3s ease-in-out;
+    }
+
+    .icon_recent_sales:hover {
+        text-shadow: 0 0 50px rgb(255, 210, 88);
+        transition: 0.3s ease-in-out;
+        transform: scale(0.8);
+    }
+
+    .icon_expiration_alert {
+        transition: 0.3s ease-in-out;
+        color:#ffc14d;
+        font-size: 40px;
+    }
+
+    .icon_license_activation:hover {
+        text-shadow: 0 0 50px rgb(0, 255, 64);
+        transition: 0.3s ease-in-out;
+        transform: scale(0.8);
+    }
+
+    .icon_license_activation {
+        transition: 0.3s ease-in-out;
+        color:#00ff62;
+        font-size: 40px;
+    }
+
+    .icon_expiration_alert:hover {
+        text-shadow: 0 0 50px rgb(255, 222, 130);
+        transition: 0.3s ease-in-out;
+        transform: scale(0.8);
+    }
+    .reveneue_overview {
+        transition: 0.3s ease-in-out;
+        color:#00ff62;
+        font-size: 40px;
+    }
+
+    .reveneue_overview:hover {
+        text-shadow: 0 0 50px rgb(0, 255, 64);
+        transition: 0.3s ease-in-out;
+        transform: scale(1.2);
+    }
+
+    .feedback {
+        transition: 0.3s ease-in-out;
+        color:#00ff62;
+        font-size: 40px;
+    }
+
+    .feedback:hover {
+        text-shadow: 0 0 50px rgb(0, 255, 64);
+        transition: 0.3s ease-in-out;
+        transform: scale(1.2);
+    }
+
+
+
+
+
+
+    a {
         text-decoration: none;
     }
-   p{
+
+    p {
         margin: 0;
-    
+
     }
+
     body {
         font-family: 'Poppins', sans-serif;
     }
