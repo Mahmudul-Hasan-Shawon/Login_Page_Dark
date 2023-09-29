@@ -1,0 +1,20 @@
+.card{
+    padding: 2px;
+}
+
+.btn_dashboad{
+    width: 50px;
+    height: 25px;
+    background-color: #6743ea;
+    border: none;
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    -o-border-radius: 100px;
+}
+
+.card-body_dashboard{
+    padding: 1px;
+    font-size: 14px;
+}

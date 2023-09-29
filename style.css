@@ -1,32 +1,31 @@
+/* Import Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@300&display=swap');
 
+/* Global Styles */
 body {
     font-family: 'Poppins', sans-serif;
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
 }
 
-.bg{
+.bg {
     background-color: #1e1e24;
 }
 
-
-
-
-/*------------ Login container ------------*/
-
+/* Login Container Styles */
 .box-area {
     width: 830px;
 }
 
-/*------------ Right box ------------*/
-
+/* Right Box Styles */
 .right-box {
     padding: 40px 30px 40px 40px;
     background-color: #22232a;
     color: #ffffff;
 }
 
-/*------------ Custom Placeholder ------------*/
-
+/* Custom Placeholder Styles */
 ::placeholder {
     font-size: 16px;
     color: #06c264;
@@ -40,27 +39,21 @@ body {
     border-radius: 30px;
 }
 
-/*------------ For small screens------------*/
-
+/* Responsive Styles for Small Screens */
 @media only screen and (max-width: 768px) {
-
     .box-area {
         margin: 0 10px;
-
     }
-
     .left-box {
         height: 100px;
         overflow: hidden;
     }
-
     .right-box {
         padding: 20px;
     }
-
 }
 
-/*------------ Button------------*/
+/* Button Styles */
 .btn {
     background-color: #6e34f4;
     transition: .3s ease-in-out;
@@ -69,20 +62,18 @@ body {
     border: none;
     font-weight: 500;
     line-height: 19px;
-
 }
 
-/*------------ Button: Hover ------------*/
+/* Button Hover Styles */
 .btn:hover {
     background-color: #2dc995;
     color: #ffffff;
     transition: .3s ease-in-out;
     border: none;
- 
 }
 
-/*------------ Purchase Button ------------*/
-.purchase_button {
+/* cart Button Styles */
+.cart_btn {
     border-radius: 5px;
     background-color: #6e34f4;
     transition: .3s ease-in-out;
@@ -90,44 +81,25 @@ body {
     height: auto;
     border: none;
     font-weight: 600;
-    -webkit-transition: .3s ease-in-out;
-    -moz-transition: .3s ease-in-out;
-    -ms-transition: .3s ease-in-out;
-    -o-transition: .3s ease-in-out;
 }
 
-.purchase_button:hover {
+.cart_btn:hover {
     background-color: #06c264;
     transition: .3s ease-in-out;
-    -webkit-transition: .3s ease-in-out;
-    -moz-transition: .3s ease-in-out;
-    -ms-transition: .3s ease-in-out;
-    -o-transition: .3s ease-in-out;
 }
 
-
-a{
+/* Link Styles */
+a {
     color: rgb(68, 194, 253);
     transition: 0.3s ease-in-out;
 }
-a:hover{
+
+a:hover {
     color: #47fda2;
     transition: 0.3s ease-in-out;
-    -webkit-transition: 0.3s ease-in-out;
-    -moz-transition: 0.3s ease-in-out;
-    -ms-transition: 0.3s ease-in-out;
-    -o-transition: 0.3s ease-in-out;
 }
 
-
-
-
-
-
-
-/*------------ Form ------------*/
-
-
+/* Form Styles */
 .form-control,
 .form-select {
     background-color: #22232a;
@@ -135,10 +107,7 @@ a:hover{
     border-radius: 8px;
     border-color: #40404b;
     color: white;
-   
 }
-
-
 
 .form-control:focus {
     background-color: #22232a;
@@ -146,22 +115,13 @@ a:hover{
     box-shadow: none;
     border-color: #6e34f4;
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 24px #000000;
-
 }
 
 .shadow {
     box-shadow: 0 .5rem 5rem #000000 !important;
 }
 
-
-
-
-
-
-
-/*------------ card Design for download page ------------*/
-@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@300&display=swap');
-
+/* Card Design for Download Page */
 html,
 body {
     -moz-box-sizing: border-box;
@@ -170,7 +130,6 @@ body {
     width: 100%;
     background: #fff;
     font-family: 'Figtree', sans-serif;
-
 }
 
 .wrapper {
@@ -181,7 +140,6 @@ body {
 
 .container-product {
     display: table-cell;
-    /* padding: 1em; */
     text-align: center;
     vertical-align: middle;
 }
@@ -223,14 +181,11 @@ h1.heading {
     background-color: #2f303a;
     border-radius: 5px;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-
     transition: box-shadow 0.25s;
-
 }
 
 .card:hover {
-    
-    box-shadow: 0 8px 17px 0 #0000009f, 0 6px 20px 0 #071952;
+    box-shadow: 0 8px 17px 0 #0000009f, 0 6px 20px 0 #00000065;
 }
 
 .img-card {
@@ -255,7 +210,6 @@ h1.heading {
 }
 
 .card-title {
-    /* font-family: 'Poppins', sans-serif; */
     margin-top: 0px;
     font-weight: 500;
     font-size: 16px;
@@ -265,4 +219,3 @@ h1.heading {
     color: #000;
     text-decoration: none !important;
 }
-
