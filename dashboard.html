@@ -1,226 +1,264 @@
 <!DOCTYPE html>
 <html lang="en" class="bg">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@500&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Figtree:wght@500&display=swap"
+      rel="stylesheet"
+    />
     <!-- Google icon -->
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
     <!-- Bootstrap 5 icon -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="./dashboard/dashboard.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="./dashboard/dashboard.css" />
     <!-- Font Awesome icon -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style.css" />
 
     <title>Dashboard</title>
-</head>
+  </head>
 
-<body class="bg text-white" style="margin-top: 80px;">
+  <body class="bg text-white" style="margin-top: 80px">
     <script id="navbar" src="nav.js"></script>
     <h1 class="text-center pt-4">Dashboard</h1>
     <div class="container">
-        <!-- Content Row-1 -->
+      <!-- Content Row-1 -->
 
-        <!-- Row-2 -->
-        <div class="row pt-5">
-            <!-- Column-1 -->
-            <div class="col-xl-3 col-sm-6 col-12">
-                <a style="text-decoration: none;" href="./table.html">
-                    <div class="card">
-                        <div class="card-body">
-                            <div class="d-flex">
-                                <div class="flex-grow-1 align-self-center">
-                                    <p>Total License<small class="text-muted"></small></p>
-                                </div>
-                                <div class="flex-shrink-0">
-                                    <span class="icon_total_license material-symbols-outlined">
-                                        <i class="fa-solid fa-cart-shopping "></i>
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </a>
+      <!-- Row-2 -->
+      <div class="row pt-5">
+        <!-- Column-1 -->
+        <div class="col-xl-3 col-sm-6 col-12">
+          <a style="text-decoration: none" href="./table.html">
+            <div class="card">
+              <div class="card-body">
+                <div class="d-flex">
+                  <div class="flex-grow-1 align-self-center">
+                    <p>Total License<small class="text-muted"></small></p>
+                  </div>
+                  <div class="flex-shrink-0">
+                    <span class="icon_total_license material-symbols-outlined">
+                      <i class="fa-solid fa-cart-shopping"></i>
+                    </span>
+                  </div>
+                </div>
+              </div>
             </div>
-            <!-- Column-2 -->
-            <div class="col-xl-3 col-sm-6 col-12">
-                <div class="card">
-                    <div class="card-body">
-                        <div class="d-flex">
-                            <div class="flex-grow-1 align-self-center">
-                                <p>Recent Sales</p>
-                            </div>
-                            <div class="flex-shrink-0">
-                                <span class="icon_recent_sales material-symbols-outlined">
-                                    <i class="fa-solid fa-truck-fast"></i>
-                                </span>
-                                <!-- <img width="48" height="48" src="https://img.icons8.com/3d-fluency/94/new.png"
+          </a>
+        </div>
+        <!-- Column-2 -->
+        <div class="col-xl-3 col-sm-6 col-12">
+          <a href="./recent_sales.html">
+            <div class="card">
+              <div class="card-body">
+                <div class="d-flex">
+                  <div class="flex-grow-1 align-self-center">
+                    <p>Recent Sales</p>
+                  </div>
+                  <div class="flex-shrink-0">
+                    <span class="icon_recent_sales material-symbols-outlined">
+                      <i class="fa-solid fa-truck-fast"></i>
+                    </span>
+                    <!-- <img width="48" height="48" src="https://img.icons8.com/3d-fluency/94/new.png"
                                     alt="new" /> -->
-                            </div>
-                        </div>
-                    </div>
+                  </div>
                 </div>
+              </div>
             </div>
-            <!-- Column-3 -->
-            <div class="col-xl-3 col-sm-6 col-12">
-                <div class="card">
-                    <div class="card-body">
-                        <div class="d-flex">
-                            <div class="flex-grow-1 align-self-center">
-                                <p>Expiration Alerts</p>
-                            </div>
-                            <div class="flex-shrink-0">
-                                <span class="icon_expiration_alert material-symbols-outlined">
-                                    <i class="fa-regular fa-clock"></i>
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Column-4 -->
-            <div class="col-xl-3 col-sm-6 col-12">
-                <div class="card">
-                    <div class="card-body">
-                        <div class="d-flex">
-                            <div class="flex-grow-1 align-self-center">
-                                <p>License Activation </p>
-                            </div>
-                            <div class="flex-shrink-0">
-                                <span class="icon_license_activation material-symbols-outlined icon">
-                                    <i class="fa-solid fa-key"></i>
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+          </a>
         </div>
-
-        <!-- Row 2 -->
-        <div class="row">
-            <!-- Column-5 -->
-            <div class="col-xl-3 col-sm-6 col-12">
-                <div class="card">
-                    <div class="card-body">
-                        <div class="d-flex">
-                            <div class="flex-grow-1 align-self-center">
-                                <p>Revenue Overview</p>
-                            </div>
-                            <div class="flex-shrink-0">
-                                <span class="material-symbols-outlined reveneue_overview">
-                                    <i class="bi bi-cash-coin"></i>
-                                </span>
-                            </div>
-                        </div>
-                    </div>
+        <!-- Column-3 -->
+        <div class="col-xl-3 col-sm-6 col-12">
+          <a href="./expiration_alert.html">
+            <div class="card">
+              <div class="card-body">
+                <div class="d-flex">
+                  <div class="flex-grow-1 align-self-center">
+                    <p>Expiration Alerts</p>
+                  </div>
+                  <div class="flex-shrink-0">
+                    <span
+                      class="icon_expiration_alert material-symbols-outlined"
+                    >
+                      <i class="fa-regular fa-clock"></i>
+                    </span>
+                  </div>
                 </div>
+              </div>
             </div>
-            <!-- Column-6 -->
-            <div class="col-xl-3 col-sm-6 col-12">
-                <div class="card">
-                    <div class="card-body">
-                        <div class="d-flex">
-                            <div class="flex-grow-1 align-self-center">
-                                <p>Feedback</p>
-                            </div>
-                            <div class="flex-shrink-0">
-                                <span class="feedback material-symbols-outlined">
-                                    <i class="fa-regular fa-comment-dots"></i>
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Column-7 -->
-            <div class="col-xl-3 col-sm-6 col-12">
-                <a href="./support.html">
-                    <div class="card">
-                        <div class="card-body">
-                            <div class="d-flex">
-                                <div class="flex-grow-1 align-self-center">
-                                    <p>Support</p>
-                                </div>
-                                <div class="flex-shrink-0">
-                                    <span class="icon_support material-symbols-outlined">
-                                        <i class="fa-solid fa-headset"></i>
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <!-- Column-8 -->
-            <div class="col-xl-3 col-sm-6 col-12">
-                <div class="card">
-                    <div class="card-body">
-                        <div class="d-flex">
-                            <div class="flex-grow-1 align-self-center">
-                                <p>License Status</p>
-                            </div>
-                            <div class="flex-shrink-0">
-                                <span class="icon_license_status material-symbols-outlined icon_license_status">
-                                    <i class="fa-solid fa-heart-circle-check"></i>
-                                </span>
-                                <!-- <img width="48" height="48" src="https://img.icons8.com/3d-fluency/94/like--v2.png"
-                                    alt="like--v2" /> -->
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+          </a>
         </div>
-
-        <!-- Row 2 end -->
-
-        <!-- Row 3 -->
-        <div class="row py-5">
-            <div class="col-xl-3 col-md-6 mb-4">
-                <div class="card border-left-primary h-100 py-2">
-                    <div class="card-body_dashboard">
-                        <div class="text-center mb-3 pt-2">
-                            <h5>Total License</h5>
-                        </div>
-                        <div class="d-flex justify-content-between px-3  ">
-                            <p>Sold</p>
-                            <button class="btn_dashboad text-white" type="button">40</button>
-                        </div>
-                    </div>
-                    <div class="card-body_dashboard">
-                        <div class="d-flex justify-content-between px-3 pt-1 ">
-                            <p>Active</p>
-                            <button class="btn_dashboad text-white" type="button">15</button>
-                        </div>
-                    </div>
-                    <div class="card-body_dashboard">
-                        <div class="d-flex justify-content-between px-3 pt-1 ">
-                            <p>Inactive</p>
-                            <button class="btn_dashboad text-white" type="button">10</button>
-                        </div>
-                    </div>
-                    <div class="card-body_dashboard">
-                        <div class="d-flex justify-content-between px-3 pt-1 ">
-                            <p class="card_text">Expired</p>
-                            <button class="btn_dashboad text-white" type="button">18</button>
-                        </div>
-                    </div>
+        <!-- Column-4 -->
+        <div class="col-xl-3 col-sm-6 col-12">
+          <a href="./license_activation.html">
+            <div class="card">
+              <div class="card-body">
+                <div class="d-flex">
+                  <div class="flex-grow-1 align-self-center">
+                    <p>License Activation</p>
+                  </div>
+                  <div class="flex-shrink-0">
+                    <span
+                      class="icon_license_activation material-symbols-outlined icon"
+                    >
+                      <i class="fa-solid fa-key"></i>
+                    </span>
+                  </div>
                 </div>
+              </div>
             </div>
+          </a>
         </div>
+      </div>
+
+      <!-- Row 2 -->
+      <div class="row">
+        <!-- Column-5 -->
+        <div class="col-xl-3 col-sm-6 col-12">
+          <a href="./revenue_overview.html">
+            <div class="card">
+              <div class="card-body">
+                <div class="d-flex">
+                  <div class="flex-grow-1 align-self-center">
+                    <p>Revenue Overview</p>
+                  </div>
+                  <div class="flex-shrink-0">
+                    <span class="material-symbols-outlined reveneue_overview">
+                      <i class="bi bi-cash-coin"></i>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <!-- Column-6 -->
+        <div class="col-xl-3 col-sm-6 col-12">
+          <a href="./feedback.html">
+            <div class="card">
+              <div class="card-body">
+                <div class="d-flex">
+                  <div class="flex-grow-1 align-self-center">
+                    <p>Feedback</p>
+                  </div>
+                  <div class="flex-shrink-0">
+                    <span class="feedback material-symbols-outlined">
+                      <i class="fa-regular fa-comment-dots"></i>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <!-- Column-7 -->
+        <div class="col-xl-3 col-sm-6 col-12">
+          <a href="./support.html">
+            <div class="card">
+              <div class="card-body">
+                <div class="d-flex">
+                  <div class="flex-grow-1 align-self-center">
+                    <p>Support</p>
+                  </div>
+                  <div class="flex-shrink-0">
+                    <span class="icon_support material-symbols-outlined">
+                      <i class="fa-solid fa-headset"></i>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <!-- Column-8 -->
+        <div class="col-xl-3 col-sm-6 col-12">
+          <a href="./license_status.html">
+            <div class="card">
+              <div class="card-body">
+                <div class="d-flex">
+                  <div class="flex-grow-1 align-self-center">
+                    <p>License Status</p>
+                  </div>
+                  <div class="flex-shrink-0">
+                    <span
+                      class="icon_license_status material-symbols-outlined icon_license_status"
+                    >
+                      <i class="fa-solid fa-heart-circle-check"></i>
+                    </span>
+                    <!-- <img width="48" height="48" src="https://img.icons8.com/3d-fluency/94/like--v2.png"
+                                        alt="like--v2" /> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <!-- Row 2 end -->
+
+      <!-- Row 3 -->
+      <div class="row py-5">
+        <div class="col-xl-3 col-md-6 mb-4">
+          <div class="card border-left-primary h-100 py-2">
+            <div class="card-body_dashboard">
+              <div class="text-center mb-3 pt-2">
+                <h5>Total License</h5>
+              </div>
+              <div class="d-flex justify-content-between px-3">
+                <p>Sold</p>
+                <button class="btn_dashboad text-white" type="button">
+                  40
+                </button>
+              </div>
+            </div>
+            <div class="card-body_dashboard">
+              <div class="d-flex justify-content-between px-3 pt-1">
+                <p>Active</p>
+                <button class="btn_dashboad text-white" type="button">
+                  15
+                </button>
+              </div>
+            </div>
+            <div class="card-body_dashboard">
+              <div class="d-flex justify-content-between px-3 pt-1">
+                <p>Inactive</p>
+                <button class="btn_dashboad text-white" type="button">
+                  10
+                </button>
+              </div>
+            </div>
+            <div class="card-body_dashboard">
+              <div class="d-flex justify-content-between px-3 pt-1">
+                <p class="card_text">Expired</p>
+                <button class="btn_dashboad text-white" type="button">
+                  18
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-
-</body>
-<style>
+  </body>
+  <style>
     .icon_support,
     .reveneue_overview,
     .feedback,
@@ -230,8 +268,8 @@
     .icon_expiration_alert,
     .icon_support,
     .icon_license_status {
-        font-size: 30px;
-        transition: 0.3s ease-in-out;
+      font-size: 30px;
+      transition: 0.3s ease-in-out;
     }
 
     .card:hover .icon,
@@ -243,109 +281,102 @@
     .card:hover .icon_expiration_alert,
     .card:hover .icon_support,
     .card:hover .icon_license_status {
-        transform: scale(1.2);
-        transition: 0.3s ease-in-out;
+      transform: scale(1.2);
+      transition: 0.3s ease-in-out;
     }
-    
-
 
     /* column-1: Icon Total License */
     .icon_total_license {
-        color: #96f8ff;
+      color: #96f8ff;
     }
 
     /* column-2: Icon Recent Sales */
     .icon_recent_sales {
-        color: #b59bff;
+      color: #b59bff;
     }
 
     /* column-3: Icon Expiration Alert */
     .icon_expiration_alert {
-        color: #ffc14d;
+      color: #ffc14d;
     }
 
     /* column-4: Icon License Activation */
     .icon_license_activation {
-        color: #00ff62;
+      color: #00ff62;
     }
 
     /* column-5: Revenue Overview */
     .reveneue_overview {
-        color: #ffe262;
+      color: #ffe262;
     }
 
     /* column-6: Feedback */
     .feedback {
-        color: #00ff62;
+      color: #00ff62;
     }
 
     /* column-7: Icon Support */
     .icon_support {
-        color: #beff93;
+      color: #beff93;
     }
 
     /* column-8: Icon License Status */
     .icon_license_status {
-        color: #ff21e1;
+      color: #ff21e1;
     }
 
-/*-------------------- Hover -------------------*/
+    /*-------------------- Hover -------------------*/
 
- /* column-1: Total License */
-.card:hover .icon_total_license {
-    text-shadow: 0 0 30px #4aff90;
-}
+    /* column-1: Total License */
+    .card:hover .icon_total_license {
+      text-shadow: 0 0 30px #4aff90;
+    }
 
-/* column-2: Recent Sales */
-.card:hover .icon_recent_sales {
-    text-shadow: 0 0 30px #6a74ff;
-}
+    /* column-2: Recent Sales */
+    .card:hover .icon_recent_sales {
+      text-shadow: 0 0 30px #6a74ff;
+    }
 
-/* column-3: Expiration Alert */
-.card:hover .icon_expiration_alert {
-    text-shadow: 0 0 30px #ffc14d;
-}
+    /* column-3: Expiration Alert */
+    .card:hover .icon_expiration_alert {
+      text-shadow: 0 0 30px #ffc14d;
+    }
 
-/* column-4: License Activation */
-.card:hover .icon_license_activation {
-    text-shadow: 0 0 30px #00ff62;
-}
+    /* column-4: License Activation */
+    .card:hover .icon_license_activation {
+      text-shadow: 0 0 30px #00ff62;
+    }
 
-/* column-5: Revenue Overview */
-.card:hover .reveneue_overview {
-    text-shadow: 0 0 30px #ffee00;
-}
+    /* column-5: Revenue Overview */
+    .card:hover .reveneue_overview {
+      text-shadow: 0 0 30px #ffee00;
+    }
 
-/* column-6: Feedback */
-.card:hover .feedback {
-    text-shadow: 0 0 30px #00ff62;
-}
+    /* column-6: Feedback */
+    .card:hover .feedback {
+      text-shadow: 0 0 30px #00ff62;
+    }
 
-/* column-7: Icon Support */
-.card:hover .icon_support {
-    text-shadow: 0 0 30px #beff93;
-}
+    /* column-7: Icon Support */
+    .card:hover .icon_support {
+      text-shadow: 0 0 30px #beff93;
+    }
 
-/* column-8: Icon License Status */
-.card:hover .icon_license_status {
-    text-shadow: 0 0 30px #ff21e1;
-}
-
-
-
+    /* column-8: Icon License Status */
+    .card:hover .icon_license_status {
+      text-shadow: 0 0 30px #ff21e1;
+    }
 
     a {
-        text-decoration: none;
+      text-decoration: none;
     }
 
     p {
-        margin: 0;
-
+      margin: 0;
     }
 
     body {
-        font-family: 'Poppins', sans-serif;
+      font-family: "Poppins", sans-serif;
     }
-</style>
-
+  </style>
 </html>
