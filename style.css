@@ -265,7 +265,7 @@ h1.heading {
 
 
 
-/* 30 Sep 2023 11:15pm */
+/* 30 Sep 2023 11:15pm Will fix later */
 
 @media (max-width: 768px){
     .col-md-6 {
@@ -334,9 +334,7 @@ h1.heading {
     .container{
         padding: 0px;
     }
-    .card,.right-box,.md-6{
-        background: none;
-    }
+
     .right-box{
         padding: 40px 40px 40px 40px;
     }
@@ -344,7 +342,6 @@ h1.heading {
 
  
 }
-
 
 @media (min-width: 150px) and (max-width: 400px) {
     .col-md-6 {
@@ -360,8 +357,7 @@ h1.heading {
         padding: 40px 40px 40px 40px;
     }
 
-
-    /* Add more styles for medium screens here */
+    
   }
 
 
