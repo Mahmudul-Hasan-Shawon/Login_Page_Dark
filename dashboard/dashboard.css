@@ -168,7 +168,6 @@
 }
 
 
-
 /* New Versio  */
 ul{
     list-style-type: none;
@@ -218,7 +217,8 @@ body {
 }
 
 a {
-  text-decoration: none
+  text-decoration: none;
+  
 }
 
 .header {
@@ -272,7 +272,8 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  overflow: hidden
+  overflow: hidden;
+  background-color: #443c68;
 }
 
 .nav_logo,
