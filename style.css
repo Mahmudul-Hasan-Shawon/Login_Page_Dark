@@ -23,6 +23,7 @@ body {
     padding: 40px 30px 40px 40px;
     background-color: #22232a;
     color: #ffffff;
+    border-radius: 0px 5px 5px 0px;
 }
 
 /* Custom Placeholder Styles */
@@ -318,7 +319,7 @@ h1.heading {
         padding: 00px;
     }
     .right-box{
-        padding: 90px 80px 90px 80px;
+        padding: 50px 80px 50px 80px;
     }
 
 
