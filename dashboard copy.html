@@ -1,30 +1,29 @@
 <!DOCTYPE html>
 <html lang="en" class="bg">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@500&display=swap" rel="stylesheet" />
-  <!-- Google icon -->
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-  <!-- Bootstrap 5 icon -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
-  <link rel="stylesheet" href="./dashboard/dashboard.css" />
-  <!-- Font Awesome icon -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@500&display=swap" rel="stylesheet" />
+    <!-- Google icon -->
 
-  <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
-  <title>Dashboard</title>
-</head>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+
+  
+    <title>Dashboard copy</title>
+  </head>
+
 
 <body class="bg text-white" style="padding-top: 80px">
-  <script id="navbar" src="nav.js"></script>
+  <script id="navbar" src="./nav.js"></script>
   <h1 class="text-center pt-4">Dashboard</h1>
   <div class="container">
     <!-- Content Row-1 -->
@@ -124,7 +123,7 @@
                 </div>
                 <div class="flex-shrink-0">
                   <span class="material-symbols-outlined reveneue_overview">
-                    <i class="bi bi-cash-coin"></i>
+                    <i class="fa-solid fa-money-check-dollar" style="color: #ffffff;"></i>
                   </span>
                 </div>
               </div>
@@ -239,14 +238,14 @@
   </div>
 </body>
 <style>
+  .btn_dashboad{
+    width: 50px;
+    height: 25px;
+    background-color: #4d4d5f;
+    border: none;
+    border-radius: 20px;
 
-  .card{
-    height: auto;
   }
-
-
-
-
 
   .icon_support,
   .reveneue_overview,
@@ -274,84 +273,67 @@
     transition: 0.3s ease-in-out;
   }
 
-  /* column-1: Icon Total License */
   .icon_total_license {
     color: #96f8ff;
   }
 
-  /* column-2: Icon Recent Sales */
   .icon_recent_sales {
     color: #b59bff;
+  
   }
 
-  /* column-3: Icon Expiration Alert */
   .icon_expiration_alert {
     color: #ffc14d;
   }
 
-  /* column-4: Icon License Activation */
   .icon_license_activation {
     color: #00ff62;
   }
 
-  /* column-5: Revenue Overview */
   .reveneue_overview {
     color: #ffe262;
   }
 
-  /* column-6: Feedback */
   .feedback {
     color: #00ff62;
   }
 
-  /* column-7: Icon Support */
   .icon_support {
     color: #beff93;
   }
 
-  /* column-8: Icon License Status */
   .icon_license_status {
     color: #ff21e1;
   }
 
-  /*-------------------- Hover -------------------*/
-
-  /* column-1: Total License */
   .card:hover .icon_total_license {
     text-shadow: 0 0 30px #4aff90;
   }
 
-  /* column-2: Recent Sales */
   .card:hover .icon_recent_sales {
-    text-shadow: 0 0 30px #6a74ff;
+    text-shadow: 0 0 30px #6a74ff
   }
 
-  /* column-3: Expiration Alert */
   .card:hover .icon_expiration_alert {
     text-shadow: 0 0 30px #ffc14d;
   }
 
-  /* column-4: License Activation */
   .card:hover .icon_license_activation {
     text-shadow: 0 0 30px #00ff62;
   }
 
-  /* column-5: Revenue Overview */
   .card:hover .reveneue_overview {
-    text-shadow: 0 0 30px #ffee00;
+    text-shadow: 0 0 30px #fe0;
   }
 
-  /* column-6: Feedback */
   .card:hover .feedback {
     text-shadow: 0 0 30px #00ff62;
   }
 
-  /* column-7: Icon Support */
   .card:hover .icon_support {
     text-shadow: 0 0 30px #beff93;
   }
 
-  /* column-8: Icon License Status */
   .card:hover .icon_license_status {
     text-shadow: 0 0 30px #ff21e1;
   }
@@ -360,13 +342,52 @@
     text-decoration: none;
   }
 
-  p {
-    margin: 0;
+  p{
+    margin-top: 0px;
+    margin-bottom: 0px;
   }
 
   body {
-    font-family: "Poppins", sans-serif;
+    font-family: Poppins, sans-serif;
   }
+
+  .bg {
+    background-color: #1e1e24;
+  }
+
+
+
+  a {
+    color: #44c2fd;
+    transition: .3s ease-in-out;
+  }
+
+  a:hover {
+    color: #47fda2;
+    transition: .3s ease-in-out;
+  }
+
+
+  .card {
+    border: 2px solid #2f303a;
+    color: #fff;
+    display: block;
+    margin-bottom: 20px;
+    line-height: 1.42857143;
+    background-color: #2f303a;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
+    transition: .25s;
+
+  }
+
+  .card:hover {
+    box-shadow: 0 8px 17px 0 #0000009f, 0 6px 20px 0 #00000065
+  }
+
+
+
+
 </style>
 
 </html>
