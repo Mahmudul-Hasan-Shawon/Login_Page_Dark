@@ -40,7 +40,7 @@
 
   /* column-2: Icon Recent Sales */
   .icon_recent_sales {
-    color: #b59bff;
+    color: #b86cff;
   }
 
   /* column-3: Icon Expiration Alert */
@@ -273,7 +273,6 @@ a {
   flex-direction: column;
   justify-content: space-between;
   overflow: hidden;
-  background-color: #443c68;
 }
 
 .nav_logo,
@@ -362,7 +361,6 @@ a {
   .l-navbar {
     left: 0;
     padding: 1rem 1rem 0 0;
-    background-color: #443C68;
   }
 
   .show {
@@ -372,4 +370,12 @@ a {
   .body-pd {
     padding-left: calc(var(--nav-width) + 188px)
   }
+}
+
+
+/* navabr color */
+
+.header,.l-navbar,.nav{
+  background-color: #2f303a;
+
 }
