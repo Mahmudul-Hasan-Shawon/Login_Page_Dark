@@ -24,8 +24,6 @@ document.addEventListener('DOMContentLoaded', function () {
             const gradient = ctx.createLinearGradient(0, chartArea.bottom, 0, chartArea.top);
             gradient.addColorStop(0, 'rgba(129, 66, 255, 1)'); // Fill color below the line
             gradient.addColorStop(1, 'rgba(129, 66, 255, 0)'); // Transparent color at the top
-            // gradient.addColorStop(0, 'rgba(191, 159, 255, 01)'); // Fill color below the line
-            // gradient.addColorStop(1, 'rgba(255, 99, 132, 0)'); // Transparent color at the top
             return gradient;
           },
           fill: 'start', // Fill from the start of the line
@@ -41,6 +39,10 @@ document.addEventListener('DOMContentLoaded', function () {
           ticks: {
             color: 'white', // Set text color to white for x-axis labels
           },
+          grid: {
+            color: 'rgba(255, 255, 255, 0.2)', // Set gridline color for the x-axis to a lighter color
+            borderWidth: 0.5, // Set gridline border width to make it thin
+          },
         },
         y: {
           beginAtZero: true,
@@ -51,13 +53,15 @@ document.addEventListener('DOMContentLoaded', function () {
               return '$' + value;
             },
           },
+          grid: {
+            color: 'rgba(255, 255, 255, 0.2)', // Set gridline color for the y-axis to a lighter color
+            borderWidth: 0.5, // Set gridline border width to make it thin
+          },
         },
       },
       plugins: {
         legend: {
-          labels: {
-            color: 'white', // Set text color to white for legend labels
-          },
+          display: false, // Set the display property of the legend to false
         },
       },
       elements: {
@@ -66,11 +70,13 @@ document.addEventListener('DOMContentLoaded', function () {
           color: 'white', // Set text color to white for chart title
           display: true, // Display the chart title
         },
+        line: {
+          borderColor: 'white', // Set line color to white
+        },
       },
       responsive: true,
       maintainAspectRatio: false,
-      backgroundColor: 'white', // Set background color of the entire chart to white
+      backgroundColor: 'black', // Set background color of the entire chart to black
     },
   });
 });
-
