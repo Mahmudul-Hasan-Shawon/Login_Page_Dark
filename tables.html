@@ -221,7 +221,46 @@
             background-color: #000000;
             color: rgb(56, 255, 99);
         }
-*/
+        */
+
+        .page-link{
+            background-color: black;
+            color: aliceblue;
+            border-color:#5c5c5c;
+        }
+
+        .paginate_button{
+            background-color: black;
+        }
+        /*Page Number*/
+        .active>.page-link, .page-link.active {
+            background-color: #2dc995;
+            border-color:#2dc995;
+        }
+        .page-link:hover {
+            background-color: #2dc995;
+            border-color:#2dc995;
+            color: white;
+        }
+        /*Next Button*/
+    
+
+
+        /*Disable Previus button*/
+        .page-item:first-child .page-link:hover{
+            background-color: #2dc995;/*Inactive hover*/
+            color: white;
+            border-color:#2dc995 ;
+        }
+
+        .disabled>.page-link, .page-link.disabled {
+            background-color: #343a40;
+            color: white;
+            border-color:#5c5c5c;
+            color: #8f979e;
+        }
+
+
 
 
     </style>
