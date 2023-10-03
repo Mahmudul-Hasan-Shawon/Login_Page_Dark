@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function () {
               return null;
             }
             const gradient = ctx.createLinearGradient(0, chartArea.bottom, 0, chartArea.top);
-            gradient.addColorStop(0, 'rgba(129, 66, 255, 1.2)'); // Fill color below the line
+            gradient.addColorStop(0, 'rgba(129, 66, 255, 1)'); // Fill color below the line
             gradient.addColorStop(1, 'rgba(129, 66, 255, 0)'); // Transparent color at the top
             // gradient.addColorStop(0, 'rgba(191, 159, 255, 01)'); // Fill color below the line
             // gradient.addColorStop(1, 'rgba(255, 99, 132, 0)'); // Transparent color at the top
