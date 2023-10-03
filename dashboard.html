@@ -23,13 +23,16 @@
 
   <link rel="stylesheet" href="./style.css" />
   <link rel="stylesheet" href="./dashboard/dashboard.css">
-  
+
   <!-- dash_2  -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
   <link rel="stylesheet" href="./dashboard/dashboard.css">
   <link rel="stylesheet" href="style.css">
   <script src="./dashboard/dashboard.js"></script>
+
+  <!-- Chart cdn -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.2.1/dist/chart.umd.min.js"></script>
 
 </head>
 
@@ -279,7 +282,7 @@
       <!-- Row 2 end -->
 
       <!-- Row 3 -->
-      <div class="row py-5">
+      <div class="row py-2">
         <div class="col-xl-3 col-md-6 mb-4">
           <div class="card border-left-primary h-100 py-2">
             <div class="card-body_dashboard">
@@ -320,15 +323,126 @@
           </div>
         </div>
       </div>
-    </div>
 
-    </div>
+      <!-- Row 4 -->
+      <div class="row py-0">
+        <div class="col-xl-6 col-md-6 mb-4">
+          <div class="card border-left-primary h-100 py-2">
+            <div class="card-body_dashboard">
+              <h3 class="text-center" >Row 4</h3>
+            
+            <div class="row p-3">
+                <!-- Bar Chart -->
+                
+                <div>
+                  <canvas id="myChart"></canvas>
+                </div>
+                <script src="./dashboard/chart_bar.js"></script>
+            
 
-    <!--Container Main end-->
+            </div>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+
+      <div class="row py-0">
+        <div class="col-xl-6 col-md-6 mb-4">
+          <div class="card border-left-primary h-100 py-2">
+            <div class="card-body_dashboard">
+              <h3 class="text-center" >Row 4</h3>
+            
+              <div>
+                <canvas id="myNewChart"></canvas> <!-- Updated ID name to "myNewChart" -->
+              </div>
+              
+              <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+              
+              <script>
+                // Function to create and update the chart
+                function createChart(dataValues, canvasId) {
+                  const ctx = document.getElementById(canvasId); // Use the specified canvas ID
+              
+                  new Chart(ctx, {
+                    type: 'line',
+                    data: {
+                      labels: ['January', 'February', 'March', 'April', 'May', 'June'],
+                      datasets: [{
+                        label: 'Revenue',
+                        data: dataValues,
+                        borderColor: 'rgba(255, 99, 132, 1)',
+                        borderWidth: 2,
+                        pointBackgroundColor: 'white',
+                        pointRadius: 5,
+                        tension: 0.4
+                      }]
+                    },
+                    options: {
+                      scales: {
+                        y: {
+                          beginAtZero: true,
+                          ticks: {
+                            callback: function (value, index, values) {
+                              return '$' + value;
+                            }
+                          }
+                        }
+                      },
+                      plugins: {
+                        legend: {
+                          labels: {
+                            color: 'white',
+                          }
+                        }
+                      },
+                      scales: {
+                        x: {
+                          ticks: {
+                            color: 'white',
+                          }
+                        },
+                        y: {
+                          ticks: {
+                            color: 'white',
+                          }
+                        }
+                      },
+                      elements: {
+                        line: {
+                          fill: false
+                        }
+                      },
+                      responsive: true,
+                      maintainAspectRatio: false,
+                      backgroundColor: 'white'
+                    }
+                  });
+                }
+              
+                // Different data values for the chart
+                const dataValues1 = [1200, 1900, 300, 500, 200, 300];
+                const dataValues2 = [800, 1500, 600, 400, 300, 700];
+              
+                // Create the chart with different data values and the updated canvas ID
+                createChart(dataValues1, 'myNewChart'); // Call the function with the new canvas ID
+              </script>
+              
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+
+      <!--Container Main end-->
   </body>
 
   <style>
-   
+
   </style>
 
 </html>
