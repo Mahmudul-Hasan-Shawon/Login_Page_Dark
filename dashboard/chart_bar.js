@@ -9,12 +9,12 @@ const ctx = document.getElementById('myChart');
                         label: 'Revenue', // Label for the dataset
                         data: dataValues, // Monetary data values
                         backgroundColor: [
-                          '#FF6384', // Red (hex code)
-                          '#36A2EB', // Blue (hex code)
-                          '#FFCE56', // Yellow (hex code)
-                          '#4BC0C0', // Green (hex code)
-                          '#9966FF', // Purple (hex code)
-                          '#FF9F40' // Orange (hex code)
+                          'rgba(255, 99, 132, 1)',
+                          'rgba(54, 162, 235, 1)',
+                          'rgba(255, 206, 86, 1)',
+                          'rgba(75, 192, 192, 1)',
+                          'rgba(153, 102, 255, 1)',
+                          'rgba(255, 159, 64, 1)'
                         ],
                         borderWidth: 1
                       }]
