@@ -27,7 +27,7 @@
 <body class="bg text-white">
     <script id="navbar" src="nav.js"></script>
 
-    <div class="container"  style="margin-top: 0px;">
+    <div class="container" style="margin-top: 0px;">
         <table id="example" class="table table-dark table-striped" style="width:100%">
             <thead>
                 <tr>
@@ -209,60 +209,59 @@
         .dataTables_length {
             padding-bottom: 20px;
         }
-        .buttons-colvis{
+
+        .buttons-colvis {
             width: auto;
         }
 
-        .container{
+        .container {
             padding-top: 80px;
         }
-        /*
-        .page-link{
-            background-color: #000000;
-            color: rgb(56, 255, 99);
-        }
-        */
 
-        .page-link{
+        /* Set the background color, text color, and border color of the page link */
+        .page-link {
             background-color: black;
             color: aliceblue;
-            border-color:#5c5c5c;
+            border-color: #5c5c5c;
         }
 
-        .paginate_button{
-            background-color: black;
-        }
-        /*Page Number*/
-        .active>.page-link, .page-link.active {
+        /* Set the background color and border color of the active page link */
+        .active>.page-link,
+        .page-link.active {
             background-color: #2dc995;
-            border-color:#2dc995;
+            border-color: #2dc995;
         }
+
+        /* Set the background color, text color, and border color of the page link when hovering over it */
         .page-link:hover {
             background-color: #2dc995;
-            border-color:#2dc995;
+            border-color: #2dc995;
             color: white;
         }
-        /*Next Button*/
-    
 
-
-        /*Disable Previus button*/
-        .page-item:first-child .page-link:hover{
-            background-color: #2dc995;/*Inactive hover*/
-            color: white;
-            border-color:#2dc995 ;
-        }
-
-        .disabled>.page-link, .page-link.disabled {
+        /* Set the background color, text color, and border color of the disabled page link */
+        .disabled>.page-link,
+        .page-link.disabled {
             background-color: #343a40;
             color: white;
-            border-color:#5c5c5c;
+            border-color: #5c5c5c;
             color: #8f979e;
         }
 
+        /* Remove focus styles for non-keyboard focus */
+        :focus:not(:focus-visible) {
+            outline: 0;
+            box-shadow: none;
+        }
 
-
-
+        /* Cross-browser styles for explicit focus via keyboard-based (eg Tab) navigation or the .focus-visible utility class */
+        :focus,
+        .focus-visible:focus:not(:focus-visible) {
+            outline: 0;
+            box-shadow:
+                0 0 0 .2rem #fff,
+                0 0 0 .35rem #069;
+        }
     </style>
 
 </body>
