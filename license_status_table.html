@@ -26,17 +26,16 @@
 
 <body class="bg text-white">
     <script id="navbar" src="nav.js"></script>
-    
+
     <div class="container" style="margin-top: 0px;">
         <table id="example" class="table table-dark table-striped" style="width:100%">
-            
             <thead>
                 <tr>
                     <th>Name</th>
                     <th>Email Address </th>
                     <th>License key</th>
                     <th>Activation Date</th>
-                    <th class="status text-center" style="width:auto;">License Status</th>
+                    <th>Expire Date</th>
                 </tr>
             </thead>
             <tbody>
@@ -45,93 +44,141 @@
                     <td>jane.doe@email.com</td>
                     <td>WXYZ-98765-QRSTU-54321-VWXYZ</td>
                     <td>2023-08-15</td>
-                    <td class="text-center"><button type="button" class="btn_active">Active</button></td>
+                    <td>2024-06-10</td>
+                </tr>
+                <tr>
+                    <td>Michael Johnson</td>
+                    <td>michael.johnson@email.com</td>
+                    <td>12345-ABCDE-67890-FGHIJ-KLMNO</td>
+                    <td>2023-10-03</td>
+                    <td>2024-08-20</td>
                 </tr>
                 <tr>
                     <td>Susan Davis</td>
                     <td>susan.davis@email.com</td>
                     <td>FGHIJ-12345-KLMNO-ABCDE-67890</td>
                     <td>2023-11-22</td>
-                    <td class="text-center"><button type="button" class="btn_revoked">Revoked</button></td>
+                    <td>2024-09-12</td>
                 </tr>
                 <tr>
                     <td>Robert Smithson</td>
                     <td>robert.smithson@email.com</td>
                     <td>KLMNO-ABCDE-12345-FGHIJ-67890</td>
                     <td>2023-12-10</td>
-                    <td class="text-center"><button type="button" class="btn_expired">Expired</button></td>
+                    <td>2024-10-05</td>
                 </tr>
                 <tr>
-                    <td>Mary Williams</td>
-                    <td>mary.williams@email.com</td>
-                    <td>LMNOP-12345-UVWXY-67890-QRSTU</td>
-                    <td>2023-07-10</td>
-                    <td class="text-center"><button type="button" class="btn_active">Active</button></td>
+                    <td>Lisa Johnson</td>
+                    <td>lisa.johnson@email.com</td>
+                    <td>QRSTU-54321-VWXYZ-WXYZ-98765</td>
+                    <td>2023-09-14</td>
+                    <td>2024-07-30</td>
                 </tr>
                 <tr>
                     <td>David Wilson</td>
                     <td>david.wilson@email.com</td>
-                    <td>UVWXY-67890-KLMNO-ABCDE-12345</td>
-                    <td>2023-09-28</td>
-                    <td class="text-center"><button type="button" class="btn_revoked">Revoked</button></td>
+                    <td>WXYZ-WXYZ-98765-QRSTU-54321</td>
+                    <td>2023-08-27</td>
+                    <td>2024-06-22</td>
                 </tr>
                 <tr>
-                    <td>Sarah Lee</td>
-                    <td>sarah.lee@email.com</td>
-                    <td>FGHIJ-67890-KLMNO-ABCDE-12345</td>
-                    <td>2023-10-18</td>
-                    <td class="text-center"><button type="button" class="btn_expired">Expired</button></td>
+                    <td>Linda Anderson</td>
+                    <td>linda.anderson@email.com</td>
+                    <td>12345-FGHIJ-ABCDE-67890-KLMNO</td>
+                    <td>2023-10-09</td>
+                    <td>2024-08-05</td>
                 </tr>
                 <tr>
-                    <td>William Davis</td>
-                    <td>william.davis@email.com</td>
-                    <td>IJK34-56789-UVWXY-67890-PQRST</td>
-                    <td>2023-12-02</td>
-                    <td class="text-center"><button type="button" class="btn_active">Active</button></td>
+                    <td>William Turner</td>
+                    <td>william.turner@email.com</td>
+                    <td>FGHIJ-KLMNO-ABCDE-12345-67890</td>
+                    <td>2023-11-01</td>
+                    <td>2024-09-28</td>
                 </tr>
                 <tr>
-                    <td>Laura Smith</td>
-                    <td>laura.smith@email.com</td>
-                    <td>ZABCD-12345-IJK34-56789-FGHIJ</td>
-                    <td>2023-11-15</td>
-                    <td class="text-center"><button type="button" class="btn_revoked">Revoked</button></td>
+                    <td>Mary Brown</td>
+                    <td>mary.brown@email.com</td>
+                    <td>QRSTU-VWXYZ-WXYZ-98765-54321</td>
+                    <td>2023-12-18</td>
+                    <td>2024-10-15</td>
                 </tr>
                 <tr>
-                    <td>Christopher Johnson</td>
-                    <td>christopher.johnson@email.com</td>
-                    <td>DEFGH-89012-ZABCD-12345-IJK34</td>
-                    <td>2023-08-05</td>
-                    <td class="text-center"><button type="button" class="btn_expired">Expired</button></td>
+                    <td>James Miller</td>
+                    <td>james.miller@email.com</td>
+                    <td>ABCDE-12345-FGHIJ-67890-KLMNO</td>
+                    <td>2023-09-29</td>
+                    <td>2024-07-17</td>
                 </tr>
                 <tr>
-                    <td>Emily Martin</td>
-                    <td>emily.martin@email.com</td>
-                    <td>UVWXY-67890-DEFGH-89012-ZABCD</td>
-                    <td>2023-09-12</td>
-                    <td class="text-center"><button type="button" class="btn_active">Active</button></td>
+                    <td>Emily White</td>
+                    <td>emily.white@email.com</td>
+                    <td>XYZ-987-PQR-5432-UVW</td>
+                    <td>2023-08-25</td>
+                    <td>2024-06-18</td>
                 </tr>
                 <tr>
-                    <td>Daniel Brown</td>
-                    <td>daniel.brown@email.com</td>
-                    <td>QRSTU-54321-UVWXY-67890-DEFGH</td>
-                    <td>2023-10-25</td>
-                    <td class="text-center"><button type="button" class="btn_revoked">Revoked</button></td>
+                    <td>Christopher Brown</td>
+                    <td>chris.brown@email.com</td>
+                    <td>LMNO-ABCDE-12345-FGHIJ-67890</td>
+                    <td>2023-10-11</td>
+                    <td>2024-08-08</td>
                 </tr>
                 <tr>
-                    <td>Olivia Taylor</td>
-                    <td>olivia.taylor@email.com</td>
-                    <td>KLMNO-ABCDE-54321-ZABCD-12345</td>
-                    <td>2023-11-30</td>
-                    <td class="text-center"><button type="button" class="btn_expired">Expired</button></td>
+                    <td>Sarah Jackson</td>
+                    <td>sarah.jackson@email.com</td>
+                    <td>UVW-XYZ-987-PQR-5432</td>
+                    <td>2023-11-29</td>
+                    <td>2024-09-22</td>
                 </tr>
                 <tr>
-                    <td>James White</td>
-                    <td>james.white@email.com</td>
-                    <td>DEFGH-89012-PQRST-54321-ZABCD</td>
-                    <td>2023-12-15</td>
-                    <td class="text-center"><button type="button" class="btn_active">Active</button></td>
+                    <td>Daniel Robinson</td>
+                    <td>daniel.robinson@email.com</td>
+                    <td>PQR-5432-UVW-XYZ-987</td>
+                    <td>2023-12-14</td>
+                    <td>2024-10-11</td>
                 </tr>
-                
+                <tr>
+                    <td>Amanda Garcia</td>
+                    <td>amanda.garcia@email.com</td>
+                    <td>5432-UVW-XYZ-987-PQR</td>
+                    <td>2023-09-21</td>
+                    <td>2024-07-03</td>
+                </tr>
+                <tr>
+                    <td>Kevin Anderson</td>
+                    <td>kevin.anderson@email.com</td>
+                    <td>FHJ-678-PQR-5432-UVW</td>
+                    <td>2023-08-08</td>
+                    <td>2024-06-01</td>
+                </tr>
+                <tr>
+                    <td>Megan Taylor</td>
+                    <td>megan.taylor@email.com</td>
+                    <td>PQR-987-FGHIJ-5432-UVW</td>
+                    <td>2023-10-17</td>
+                    <td>2024-08-13</td>
+                </tr>
+                <tr>
+                    <td>William Harris</td>
+                    <td>william.harris@email.com</td>
+                    <td>UVW-XYZ-987-PQR-5432</td>
+                    <td>2023-11-06</td>
+                    <td>2024-09-05</td>
+                </tr>
+                <tr>
+                    <td>Olivia Miller</td>
+                    <td>olivia.miller@email.com</td>
+                    <td>PQR-5432-UVW-XYZ-987</td>
+                    <td>2023-12-24</td>
+                    <td>2024-10-21</td>
+                </tr>
+                <tr>
+                    <td>Nathan Johnson</td>
+                    <td>nathan.johnson@email.com</td>
+                    <td>5432-UVW-XYZ-987-PQR</td>
+                    <td>2023-09-06</td>
+                    <td>2024-07-28</td>
+                </tr>
             </tbody>
             <!-- <tfoot>
             <tr>
@@ -144,17 +191,6 @@
             </tr>
         </tfoot> -->
         </table>
-
-                <!-- Display counts -->
-                <div>
-                    Active: <span id="activeCount">0</span>
-                </div>
-                <div>
-                    Revoked: <span id="revokedCount">0</span>
-                </div>
-                <div>
-                    Expired: <span id="expiredCount">0</span>
-                </div>
         
     </div>
 
@@ -168,41 +204,6 @@
             table.buttons().container()
                 .appendTo('#example_wrapper .col-md-6:eq(0)');
         });
-
-
-
-        //counitng
-        $(document).ready(function () {
-            var activeCount = 1;
-            var revokedCount = 1;
-            var expiredCount = 1;
-    
-            // Loop through each row in the table body
-            $('#example tbody tr').each(function () {
-                var licenseStatus = $(this).find('td:eq(4)').text(); // Assuming the status column is the fifth column (index 4)
-    
-                if (licenseStatus === 'Active') {
-                    activeCount++;
-                } else if (licenseStatus === 'Revoked') {
-                    revokedCount++;
-                } else if (licenseStatus === 'Expired') {
-                    expiredCount++;
-                }
-            });
-    
-            // Display the counts
-            $('#activeCount').text(activeCount);
-            $('#revokedCount').text(revokedCount);
-            $('#expiredCount').text(expiredCount);
-        });
-
-
-
-
-
-
-
-
     </script>
 
     <style>
@@ -278,35 +279,10 @@
      
           
 
-.btn_active,.btn_inactive,.btn_revoked,.btn_expired{
-    
-    width: 50%;
- 
-    padding: 5px;
-    color: white;
-    border: none;
-    border-radius: 50px;
-    font-weight: 600;
-    font-family: 'Inter', sans-serif;
-    font-size: small;
-}
 
-.btn_active{
-    background-color: #18c48a;
 
-}
-.btn_inactive{
-    background-color: #a646f5;
 
-}
-.btn_revoked{
-    background-color: #0047e0;
 
-}
-.btn_expired{
-    background-color: #ff0077;
-
-}
 
 
 
