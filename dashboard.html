@@ -447,11 +447,22 @@
       <div class="row">
 
         <!-- Column-1 -->
-        <div class="col-xl-6 col-md-6">
-      
+        <div class="col-xl-6 col-md-6 ">
           <div class="card" style="background:black">
-            <h4 class="text-center pt-2" >Revenue</h4>
-            <div class="card-body" style="height:400px; padding-top:0px;background:black;">
+            <div class="card-body" style="height:400px; padding-bottom:120px;background:black;">
+              <h3 class="text-center">Monthly Sales</h3>
+              <div class="d-flex align-items-center text-start  py-2">
+                <div class="col-md-2">
+                  <label for="yearSelect" class="form-label">Select Year:</label>
+                </div>
+                <div class="col-md-2 px-2">
+                  <select id="yearSelect" class="form-select form-select-sm">
+                    <option value="2022">2022</option>
+                    <option value="2023">2023</option>
+                  </select>
+                </div>
+              </div>
+              </select>
               <canvas id="myChart"></canvas>
               <script src="./dashboard/chart_bar.js"></script>
             </div>
@@ -460,13 +471,58 @@
         <!-- Column-2 -->
         <div class="col-xl-6 col-md-6">
           <div class="card" style="background:black">
-            <h4 class="text-center pt-2" >Overview</h4>
+            <div class="card-body" style="height:400px; padding-bottom:120px;background:black;">
+              <h3 class="text-center">Overview</h3>
+              <div class="d-flex align-items-center text-start py-2">
+                <div class="col-md-2">
+                  <label for="yearSelect_line" class="form-label">Select Year:</label>
+                </div>
+                <div class="col-md-2 px-2">
+                  <select id="yearSelect_line" class="form-select form-select-sm">
+                    <option value="2022">2022</option>
+                    <option value="2023">2023</option>
+                    <option value="2024">2024</option>
+                  </select>
+                </div>
+              </div>
+              </select>
+              <canvas id="chart_line"></canvas>
+              <script src="./dashboard/chart_line.js"></script>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="col-xl-6 col-md-6">
+          <div class="card" style="background:black">
+            <div class="card-body" style="height:400px; padding-bottom:120px;background:black;">
+              <h1 class="text-center">Overview</h1>
+              <div class="d-flex align-items-center text-end py-2">
+                <div class="col-md-3">
+                  <label for="yearSelect_line" class="form-label">Select Year:</label>
+                </div>
+                <div class="col-md-2 px-2">
+                  <select id="yearSelect_line" class="form-select form-select-sm">
+                    <option value="2022">2022</option>
+                    <option value="2023">2023</option>
+                    <option value="2024">2024</option>
+                  </select>
+                </div>
+              </div>
+              </select>
+              <canvas id="chart_line"></canvas>
+              <script src="./chart_line_test.js"></script>
+            </div>
+          </div>
+        </div> -->
+        <!-- Column-2 -->
+        <!-- <div class="col-xl-6 col-md-6">
+          <div class="card" style="background:black">
+            <h4 class="text-center pt-2">Overview</h4>
             <div class="card-body" style="height:400px;background:black;">
               <canvas id="chart_line"></canvas>
             </div>
-            <script src="./dashboard/chart_line.js"></script>
+            <script src="./chart_line_test.js"></script>
           </div>
-        </div>
+        </div> -->
 
       </div>
 
@@ -478,7 +534,7 @@
     <!--Container Main end-->
   </body>
 
-  <style> 
+  <style>
     @media screen and (max-width: 768px) {
 
       #myChart {
@@ -487,6 +543,7 @@
         padding: none;
       }
     }
+
     @media screen and (max-width: 575px) {
 
       #myChart {
@@ -495,6 +552,21 @@
         padding: 0px;
       }
     }
+
+
+    #yearSelect_line,#yearSelect{
+      width: auto;
+    }
+
+    .form-label {
+      margin-bottom: 0rem;
+  }
+
+
+
+
+
+
 
   </style>
 

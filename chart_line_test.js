@@ -4,9 +4,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // Data with monetary values for multiple years and months
   const data = {
-    '2022': [1200, 1900, 300, 500, 200, 300, 1200, 1900, 300, 500, 200, 300],
-    '2023': [1500, 2200, 400, 600, 250, 350, 1500, 2200, 400, 600, 250, 350],
-    '2024': [1000, 1700, 250, 400, 150, 250, 1000, 1700, 250, 400, 150, 250],
+    '2022': [1200, 1900, 300, 500, 200, 300],
+    '2023': [1500, 2200, 400, 600, 250, 350],
+    '2024': [1000, 1700, 250, 400, 150, 250],
     // Add data for more years as needed
   };
 
@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function () {
   chart = new Chart(ctx, {
     type: 'line', // Change the chart type to line
     data: {
-      labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'], // Short month names as labels
+      labels: ['January', 'February', 'March', 'April', 'May', 'June'], // Month names as labels
       datasets: [{
         label: 'Revenue', // Label for the dataset
         data: data[yearSelect_line.value], // Initial data based on the selected year
