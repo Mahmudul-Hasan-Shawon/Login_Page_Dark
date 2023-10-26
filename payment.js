@@ -7,13 +7,13 @@ window.onload = function() {
     , sin = Math.sin
     , PI = Math.PI
     , PI2 = PI * 2
-    , timer = undefined
+    , timer = 6
     , frame = undefined
     , confetti = [];
 
   var particles = 10
-    , spread = 40
-    , sizeMin = 3
+    , spread = 150
+    , sizeMin = 5
     , sizeMax = 12 - sizeMin
     , eccentricity = 10
     , deviation = 100
@@ -28,11 +28,11 @@ window.onload = function() {
     function() {
       return color(200 * random()|0, 200 * random()|0, 200 * random()|0);
     }, function() {
-      var black = 200 * random()|0; return color(200, black, black);
+      var black = 200 * random()|0; return color(200, 200, 200);
     }, function() {
-      var black = 200 * random()|0; return color(black, 200, black);
+      var black = 200 * random()|0; return color(200, 200, 100);
     }, function() {
-      var black = 200 * random()|0; return color(black, black, 200);
+      var black = 200 * random()|0; return color(10, 50, 200);
     }, function() {
       return color(200, 100, 200 * random()|0);
     }, function() {
