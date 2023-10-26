@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Data with monetary values for multiple years and months
     const data = {
-      '2022': [1200, 1900, 300, 500, 200, 300, 1000, 800, 1500, 700, 1100, 1400],
+      '2022': [1200, 1300, 300, 500, 1200, 300, 1000, 800, 1000, 700, 1100, 1400],
       '2023': [1500, 2200, 400, 600, 250, 350, 900, 1200, 1800, 950, 1300, 1600],
       // Add data for more years as needed
     };
