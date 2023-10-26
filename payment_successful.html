@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en" style="background: #1e1e24;">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Index</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap">
+    <script src="./payment.js"></script>
+    
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="text-center">
+            <div class="container pt-5 pb-5 my-5">
+
+                <div class="card">
+                
+
+                    <div class="card-body">
+                        <svg id="successAnimation" class="animated"  width="70" height="70" viewBox="0 0 70 70">
+                            <path id="successAnimationResult" fill="#D8D8D8" d="M35,60 C21.1928813,60 10,48.8071187 10,35 C10,21.1928813 21.1928813,10 35,10 C48.8071187,10 60,21.1928813 60,35 C60,48.8071187 48.8071187,60 35,60 Z M23.6332378,33.2260427 L22.3667622,34.7739573 L34.1433655,44.40936 L47.776114,27.6305926 L46.223886,26.3694074 L33.8566345,41.59064 L23.6332378,33.2260427 Z"/>
+                            <circle id="successAnimationCircle" cx="35" cy="35" r="24" stroke="#979797" stroke-width="2" stroke-linecap="round" fill="transparent"/>
+                            <polyline id="successAnimationCheck" stroke="#979797" stroke-width="2" points="23 34 34 43 47 27" fill="transparent"/>
+                          </svg>
+
+
+                        <h5 class="card-title" style="font-weight: bold;">Payment Successful</h5>
+                        <p class="card-text">Transaction number : 24578679789761</p>
+                    </div>
+                </div>
+            
+            </div>
+        </div>
+    </div>
+</body>
+
+
+
+<style>
+
+.card-body{
+  height: 200px;
+  padding-top: 20px;
+  background-color: #22232a;
+  color: white;
+  border-radius: 10px;
+}
+.card{
+  border: none;
+  border-radius:50px ;
+}
+
+/*Success icon start*/
+    html,
+    body {
+      height: 100%;
+    }
+    
+    body {
+      align-items: center;
+      background-color: #000000;
+      display: flex;
+      justify-content: center;
+    }
+    
+    @-webkit-keyframes scaleAnimation {
+      0% {
+        opacity: 0;
+        transform: scale(1.5);
+      }
+      100% {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+    
+    @keyframes scaleAnimation {
+      0% {
+        opacity: 0;
+        transform: scale(1.5);
+      }
+      100% {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+    @-webkit-keyframes drawCircle {
+      0% {
+        stroke-dashoffset: 151px;
+      }
+      100% {
+        stroke-dashoffset: 0;
+      }
+    }
+    @keyframes drawCircle {
+      0% {
+        stroke-dashoffset: 151px;
+      }
+      100% {
+        stroke-dashoffset: 0;
+      }
+    }
+    @-webkit-keyframes drawCheck {
+      0% {
+        stroke-dashoffset: 36px;
+      }
+      100% {
+        stroke-dashoffset: 0;
+      }
+    }
+    @keyframes drawCheck {
+      0% {
+        stroke-dashoffset: 36px;
+      }
+      100% {
+        stroke-dashoffset: 0;
+      }
+    }
+    @-webkit-keyframes fadeOut {
+      0% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 0;
+      }
+    }
+    @keyframes fadeOut {
+      0% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 0;
+      }
+    }
+    @-webkit-keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+    #successAnimationCircle {
+      stroke-dasharray: 151px 151px;
+      stroke: #43ee85;
+    }
+    
+    #successAnimationCheck {
+      stroke-dasharray: 36px 36px;
+      stroke: #43ee85;
+    }
+    
+    #successAnimationResult {
+      fill: #43ee85;
+      opacity: 0;
+    }
+    
+    #successAnimation.animated {
+      -webkit-animation: 1s ease-out 0s 1 both scaleAnimation;
+              animation: 1s ease-out 0s 1 both scaleAnimation;
+    }
+    #successAnimation.animated #successAnimationCircle {
+      -webkit-animation: 1s cubic-bezier(0.77, 0, 0.175, 1) 0s 1 both drawCircle, 0.3s linear 0.9s 1 both fadeOut;
+              animation: 1s cubic-bezier(0.77, 0, 0.175, 1) 0s 1 both drawCircle, 0.3s linear 0.9s 1 both fadeOut;
+    }
+    #successAnimation.animated #successAnimationCheck {
+      -webkit-animation: 1s cubic-bezier(0.77, 0, 0.175, 1) 0s 1 both drawCheck, 0.3s linear 0.9s 1 both fadeOut;
+              animation: 1s cubic-bezier(0.77, 0, 0.175, 1) 0s 1 both drawCheck, 0.3s linear 0.9s 1 both fadeOut;
+    }
+    #successAnimation.animated #successAnimationResult {
+      -webkit-animation: 0.3s linear 0.9s both fadeIn;
+              animation: 0.3s linear 0.9s both fadeIn;
+    }
+
+
+/*Success icon end*/
+
+
+
+
+
+
+
+
+
+
+    
+    body {
+        font-family: 'Poppins', sans-serif;
+        font-size: 15px;
+    }
+
+
+
+
+
+
+
+    @media (max-width: 368px) {
+        .container {
+            display: block;
+
+        }
+    
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</style>
+
+</html>
